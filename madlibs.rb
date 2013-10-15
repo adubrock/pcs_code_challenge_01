@@ -1,4 +1,4 @@
-# This is increment 5
+# This is increment 5.1
 
 class Madlibs
 	def self.prompt
@@ -25,19 +25,19 @@ class Madlibs
 		4. Clinging under a speeding truck
 
 		by typing the number of your choice:"
-		prep_phrase = gets.strip
-		if prep_phrase == "1"
-			prep_phrase = "in a boat"
-		elsif prep_phrase == "2"
-			prep_phrase = "on a bus"
-		elsif prep_phrase == "3"
-			prep_phrase = "inside a whale"
-		elsif prep_phrase == "4"
-			prep_phrase = "clinging under a speeding truck"
+		transport = gets.strip
+		if transport == "1"
+			transport = "in a boat"
+		elsif transport == "2"
+			transport = "on a bus"
+		elsif transport == "3"
+			transport = "inside a whale"
+		elsif transport == "4"
+			transport = "clinging under a speeding truck"
 		else
 			puts "You did not choose a valid number! By default, your phrase is now 'behind the PCS dinosaur.'
 			"
-			prep_phrase = "behind the PCS dinosaur"
+			transport = "behind the PCS dinosaur"
 		end
 
 		madlibs = {
@@ -46,7 +46,7 @@ class Madlibs
 			"verb" => verb, 
 			"adverb" => adverb, 
 			"object" => object,
-			"prep_phrase" => prep_phrase
+			"transport" => transport
 		}
 	end
 end
@@ -56,8 +56,8 @@ madlibs = Madlibs.prompt
 template_array = [
 			"The #{madlibs['adjective']} #{madlibs['noun']} suddenly and #{madlibs['adverb']} had to #{madlibs['verb']} the #{madlibs['object']}", 
 			"The #{madlibs['noun']} jumped over the #{madlibs['object']}", 
-			"The #{madlibs['noun']} says 'let's #{madlibs['adverb']} #{madlibs['verb']} #{madlibs['prep_phrase']} to the #{madlibs['adjective']} #{madlibs['object']}!'",
-			"He looked at the #{madlibs['noun']} and said 'Hey! Did you see that #{madlibs['object']} #{madlibs['prep_phrase']}? #{madlibs['verb'].upcase}! #{madlibs['verb'].upcase}!" 
+			"The #{madlibs['noun']} says 'let's #{madlibs['adverb']} #{madlibs['verb']} #{madlibs['transport']} to the #{madlibs['adjective']} #{madlibs['object']}!'",
+			"He looked at the #{madlibs['noun']} and said 'Hey! Did you see that #{madlibs['object']} #{madlibs['transport']}? #{madlibs['verb'].upcase}! #{madlibs['verb'].upcase}!" 
 		]
 
 class SentenceTemplate

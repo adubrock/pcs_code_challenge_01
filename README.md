@@ -3,9 +3,8 @@ pcs_code_challenge_01
 
 Growing Madlibs Code Challenge
 
-Increment 5
+Increment 5.1
 ** New features outlined in 1b and 3.
-
 
 1. Uses a class to:
 
@@ -16,13 +15,13 @@ Increment 5
 		Adverb
 		Object
 
-	b. (New Feature) Gather a prepositional phrase via a multiple choice prompt. (If an improper number is detected, the user gets a pre-determined prepositional phrase).
+	b. (New Feature) Gather a mode of transportation via a multiple choice prompt. (If an improper number is detected, the user gets a pre-determined mode of transportation).
 
-	b. Store all of these in a hash where the key is the name of the part of speech. For example, "noun," "verb," or "prep_phrase."
+	b. Store all of these in a hash where the key is the name of the part of speech. For example, "noun," "verb," or "transport."
 
 2. Stores the hash values outside the class
 
-3. Creates an array with four sentence templates. New: one more template added in this increment, which includes the new prepositional phrase, and one of the older templates now includes this prepositional phrase.
+3. Creates an array with four sentence templates. New: one more template added in this increment, which includes the new mode of transportation, and one of the older templates now includes this mode of transportation.
 
 4. Uses another class to insert the hash values into the sentence templates
 
